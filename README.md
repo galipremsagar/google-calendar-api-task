@@ -39,3 +39,5 @@ This is of method type POST. The push notifications from the google servers come
 For the purpose of those push notifications being recieved at the client end, i've implemented polling mechanism,.i.e., the client will keep polling the server for any changes in the events list & retrieve the same. I've used polling though I know the implementation of sockets to avoid complexity in the code and save time so that I could work on other issues I faced in this task.
 
 Note: I've implemented the events api for valid cases only, so invalid dates check is not put.
+
+Disclaimer: My major focus was to satisfy the actual requirement more than optimizations, My code can still be optimized given that I have time. Since This was a timed task, submitting the part which I've done :)
