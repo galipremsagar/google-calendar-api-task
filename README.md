@@ -40,4 +40,4 @@ For the purpose of those push notifications being recieved at the client end, i'
 
 Note: I've implemented the events api for valid cases only, so invalid dates check is not put.
 
-Disclaimer: My major focus was to satisfy the actual requirement more than optimizations, My code can still be optimized given that I have time. Since This was a timed task, submitting the part which I've done :)
+Disclaimer: My major focus was to satisfy the actual requirement more than optimizations, My code can still be optimized given that I have time. Since This was a timed task, submitting the part which I've done in the given time :)
