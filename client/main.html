@@ -1,0 +1,46 @@
+<div class="navbar navbar-inverse navbar-fixed-top demo-nav" role="navigation" bs-navbar style="background-color: white;">
+  <div class="navbar-header">
+    <a class="navbar-brand" style="color: black;">Calendar Listing App</a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a ng-click="logout()" style="color: black;">Logout</a></li>
+  </ul>
+</div>
+
+<div id="container">
+	<div class="col-md-4">
+        <h2>Select Date from the date picker to view that day events</h2>
+        <p>Note:give valid date in format of DD/MM/YYYY</p>
+        <input type="text"  ng-model="date" /> <button ng-click="getEvents()">Get List</button>
+
+
+        <div ng-repeat="event in events" class="listItem">
+            <a ng-click="setCurrentEvent(event)">{{event.summary}}</a>
+        </div>
+    </div>
+    <div id="mainContent" class="col-md-5">
+        <h2>{{ currentEvent.summary }}</h2>
+        <div class="well" ng-show="currentEvent">
+            Description: {{currentEvent.description}}<br/>
+            Email ID: {{currentEvent.googleId}}<br/>
+            Event ID: {{currentEvent.id}}<br/>
+            Status: {{currentEvent.status}}<br/>
+            WebURL: {{currentEvent.htmlLink}}<br/>
+            Event Created on: {{currentEvent.created}}<br/>
+            Event Last Updated on: {{currentEvent.updated}}<br/>
+            Event Summary: {{currentEvent.summary}}<br/>
+            Event Description: {{currentEvent.description}}<br/>
+            Event Location: {{currentEvent.location}}<br/>
+            Event ColorID: {{currentEvent.colorId}}<br/>
+            Event Creator Email ID: {{currentEvent.creatorEmailId}}<br/>
+            Event Creator Display Name: {{currentEvent.creatorDisplayName}}<br/>
+            Event Organizer Email ID: {{currentEvent.organizerEmailId}}<br/>
+            Event Organizer Display Name: {{currentEvent.organizerDisplayName}}<br/>
+            Event Start time: {{currentEvent.startDateTime.dateTime || currentEvent.startDateTime.date}}<br/>
+            Event End time: {{currentEvent.endDateTime.dateTime || currentEvent.endDateTime.date}}<br/>
+            Recurrence info: {{currentEvent.recurrence}}<br/>
+            Recurrence Event ID: {{currentEvent.recurrenceEventId}}<br/>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+.nav, .pagination, .carousel, .panel-title, .dropdown-menu a { cursor: pointer; }
+
+.demo-nav {
+    border-color: #ABC8E2;
+    background-color: #375D81;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+    color: #E1E6FA;
+}
+
+.listItem {
+    list-style: none;
+}
+
+.listItem > a {
+    cursor: pointer;
+}
+
+
